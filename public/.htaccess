@@ -1,0 +1,9 @@
+<IfModule mod_fcgid.c>
+    AddHandler fcgid-script .fcgi
+
+    Options +ExecCGI
+
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^(.*) main.fcgi
+</IfModule>
